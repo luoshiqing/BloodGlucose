@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="FoodImgView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-QC-07C"/>
+                <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gd-K2-WeW">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ylt-XB-Ea3"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmN-DC-GAN">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1Rn-pd-a9Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tmN-DC-GAN" secondAttribute="trailing" id="FeN-oH-1jx"/>
+                <constraint firstItem="0Gd-K2-WeW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HLQ-5D-IfI"/>
+                <constraint firstItem="f9W-QC-07C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PPn-U9-Mde"/>
+                <constraint firstAttribute="bottom" secondItem="tmN-DC-GAN" secondAttribute="bottom" id="Ptd-fu-hjm"/>
+                <constraint firstItem="tmN-DC-GAN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RIQ-bB-VHi"/>
+                <constraint firstAttribute="bottom" secondItem="f9W-QC-07C" secondAttribute="bottom" id="bSQ-zK-dl9"/>
+                <constraint firstItem="f9W-QC-07C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d5i-z9-EvL"/>
+                <constraint firstAttribute="trailing" secondItem="0Gd-K2-WeW" secondAttribute="trailing" id="puZ-MV-fL9"/>
+                <constraint firstAttribute="trailing" secondItem="f9W-QC-07C" secondAttribute="trailing" id="sVM-69-kDw"/>
+                <constraint firstAttribute="bottom" secondItem="0Gd-K2-WeW" secondAttribute="bottom" id="sZw-81-qYT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="f9W-QC-07C" id="oKA-B6-1uf"/>
+                <outlet property="nameLabel" destination="tmN-DC-GAN" id="r5R-eT-jNl"/>
+            </connections>
+            <point key="canvasLocation" x="-41" y="31"/>
+        </view>
+    </objects>
+</document>

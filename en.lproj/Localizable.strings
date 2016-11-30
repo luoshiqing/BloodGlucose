@@ -1,0 +1,105 @@
+/* 
+  Localizable.strings
+  BloodGlucose
+
+  Created by nash_su on 6/1/15.
+  Copyright (c) 2015 nash_su. All rights reserved.
+*/
+USERNAME="Username";
+PASSWORD="Password";
+CONFIRMPASSWORD="Password confirm";
+CAPTCHATEXT="CAPTCHA";
+GETCAPTCHA="get captcha";
+LOGIN="Login";
+LOGINING="Login...";
+REG="Register";
+FORGETPWD="Forget password";
+USERPWDWRONG="username/password wrong";
+USERPWDWRONGMSG="make sure you input right username/password";
+SENDPWD="密码已发送至手机";
+
+CONFIRM="Confirm";
+CANCEL="Cancel";
+
+REGFAILED="register failed";
+COMMERROR="network failure";
+COMMERRORMSG="network failure, please try later";
+
+
+USERNAMEERROR="username error";
+USERNAMEERRORMSG="username must greater than 11 character";
+
+USERNAMEOK="username available";
+USERNAMETAKEN="username already taken";
+
+PASSWORDNOTMATCH="password not match";
+PASSWORDNOTMATCHMSG="password and password confirm not match";
+
+
+INITING="initlizing";
+JIHUA="Sensor initlizing";
+REMAINTIME="Remaining time";
+
+JIHUAENDNOTI="Initlizing complete";
+JIHUAENDNOTIMSG="Initlizing complete, please input reference finger glucose data";
+
+
+BLENOTSUPPORT="Current bluetooth not support";
+BLEOFF="Bluetooth is closed";
+BLECONNECTED="BLE connected";
+CONNECTEDSUCCESS="Connect success";
+CONNECTEDCLOSED="Connection closed";
+SCANDEVICES="Discovered devices";
+
+CONNECTING="Connecting";
+ATLEASTONREF="At least input one reference";
+ATLEASTONREFMSG="At least input one reference finger glucose data";
+
+//日志
+BOOTING="Booting";
+INIT="initializing";
+
+READLOG="Reading log";
+READLOGCOMPLETE="log reading complete";
+
+BINDINGSUCCESS="Binding success";
+
+
+//栏目
+DIARY="DIARY";
+RECIPE="Recipe";
+REPORT="Report";
+SETTING="Setting";
+
+GLUCOSE=" ";
+TITLE="Dynamic Glucose Monitor";
+MIN="m";
+SEC="s";
+
+LOGOUT="Logout";
+LOGBTN="Log";
+BACKBTN="Back";
+MENU="菜单";
+MENU1="";
+
+
+//Input Blood Ref View
+
+IBRF_INPUT_PLACEHOLDER="Please input finger glucose";
+
+
+BLEDEVICELISTTITLE="BLE Device List";
+
+INPUTSUCCESS="Input success";
+
+PhoneNuberFails="输入的手机号码错误";
+PhoneNuberNill="输入的手机号码为空";
+PleaseEnterThePhoneNumber="请输入手机号码";
+PleaseEnterACorrectNumber="请输入正确的手机号码";
+PhoneNuberTrue="获取密码成功";
+NubToPhone="密码已发送至您的手机";
+GetYanzhengma="获取验证码";
+SendYanzhengma="验证码已发送至您的手机";
+
+Tips="温馨提示";
+RegisterFalse="输入的注册信息不完整";

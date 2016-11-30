@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "当天数据"; ObjectID = "GFx-67-NDM"; */
+"GFx-67-NDM.text" = "当天数据";
+
+/* Class = "UIButton"; normalTitle = "正常"; ObjectID = "SLk-ii-wV1"; */
+"SLk-ii-wV1.normalTitle" = "正常";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "aaC-J2-Ag5"; */
+"aaC-J2-Ag5.text" = "0.0";
+
+/* Class = "UILabel"; text = "实时血糖"; ObjectID = "cvR-VI-GyA"; */
+"cvR-VI-GyA.text" = "实时血糖";
+
+/* Class = "UINavigationItem"; title = "动态血糖监测"; ObjectID = "gWd-8B-pdi"; */
+"gWd-8B-pdi.title" = "动态血糖监测";
+
+/* Class = "UINavigationItem"; title = "注册"; ObjectID = "iax-0I-8E8"; */
+"iax-0I-8E8.title" = "注册";
+
+/* Class = "UILabel"; text = "mmol/L"; ObjectID = "m6D-SZ-ZHy"; */
+"m6D-SZ-ZHy.text" = "mmol/L";
+
+/* Class = "UINavigationItem"; title = "登录"; ObjectID = "qpw-J6-Fkb"; */
+"qpw-J6-Fkb.title" = "登录";
+
+/* Class = "UIButton"; normalTitle = "参比指血"; ObjectID = "su2-wn-Aob"; */
+"su2-wn-Aob.normalTitle" = "参比指血";

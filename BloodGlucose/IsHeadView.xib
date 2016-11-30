@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IsHeadView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2B.png" translatesAutoresizingMaskIntoConstraints="NO" id="YFF-b9-fRc">
+                    <rect key="frame" x="129" y="15" width="63" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="7AC-m8-v8S"/>
+                        <constraint firstAttribute="width" constant="63" id="g9r-F6-hI8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有完善您的个人资料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA9-eZ-NHK">
+                    <rect key="frame" x="61" y="112" width="199" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="199" id="Xsc-2X-PWg"/>
+                        <constraint firstAttribute="height" constant="21" id="ile-4c-CWc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无法获得饮食、运动建议" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-4A-75q">
+                    <rect key="frame" x="50" y="141" width="220" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="M56-fG-kFe"/>
+                        <constraint firstAttribute="width" constant="220" id="jLe-Sl-byD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUN-90-Jhw">
+                    <rect key="frame" x="86" y="182" width="148" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="JmO-wt-smB"/>
+                        <constraint firstAttribute="width" constant="148" id="RIz-Xa-ERU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="去完善资料">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YFF-b9-fRc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="54F-7M-ue8"/>
+                <constraint firstItem="BA9-eZ-NHK" firstAttribute="top" secondItem="YFF-b9-fRc" secondAttribute="bottom" constant="30" id="TKZ-b7-LTI"/>
+                <constraint firstItem="YFF-b9-fRc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ThU-fe-Pgq"/>
+                <constraint firstItem="BA9-eZ-NHK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YzD-mH-V0X"/>
+                <constraint firstItem="Zit-4A-75q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bsO-bz-bd7"/>
+                <constraint firstItem="Zit-4A-75q" firstAttribute="top" secondItem="BA9-eZ-NHK" secondAttribute="bottom" constant="8" id="evb-Sr-3yj"/>
+                <constraint firstItem="vUN-90-Jhw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oqu-A8-dOy"/>
+                <constraint firstItem="vUN-90-Jhw" firstAttribute="top" secondItem="Zit-4A-75q" secondAttribute="bottom" constant="20" id="wEK-Ze-JII"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addInforBtn" destination="vUN-90-Jhw" id="ROD-RB-0zx"/>
+            </connections>
+            <point key="canvasLocation" x="390" y="255.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2B.png" width="42" height="39"/>
+    </resources>
+</document>

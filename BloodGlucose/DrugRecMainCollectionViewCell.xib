@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DrugRecMainCell" id="gTV-IL-0wX" customClass="DrugRecMainCollectionViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="133"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitmap.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hbf-hj-r3t"/>
+                    <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-NF-2te">
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="eW6-a3-CF7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S73-05-BHB">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="pfh-HF-Ei8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huahou-baise.png" translatesAutoresizingMaskIntoConstraints="NO" id="mjV-Xf-Uac">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="dg4-XT-X7Y"/>
+                            <constraint firstAttribute="width" constant="15" id="ruc-nQ-pTx"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="S73-05-BHB" secondAttribute="bottom" id="AQ6-Pm-YoG"/>
+                <constraint firstAttribute="trailing" secondItem="mjV-Xf-Uac" secondAttribute="trailing" constant="4" id="GQ8-HI-0Na"/>
+                <constraint firstAttribute="trailing" secondItem="S73-05-BHB" secondAttribute="trailing" id="Gsi-dE-LEe"/>
+                <constraint firstItem="Hbf-hj-r3t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HRe-o5-57o"/>
+                <constraint firstItem="mjV-Xf-Uac" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="I5g-z0-dQM"/>
+                <constraint firstAttribute="bottom" secondItem="Hbf-hj-r3t" secondAttribute="bottom" id="S8d-Hu-jmD"/>
+                <constraint firstItem="Hbf-hj-r3t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tds-sG-SiU"/>
+                <constraint firstAttribute="trailing" secondItem="Hbf-hj-r3t" secondAttribute="trailing" id="ZgV-s8-Krt"/>
+                <constraint firstAttribute="bottom" secondItem="AgC-NF-2te" secondAttribute="bottom" id="g9h-6e-ghz"/>
+                <constraint firstItem="S73-05-BHB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lja-hL-O9g"/>
+                <constraint firstAttribute="trailing" secondItem="AgC-NF-2te" secondAttribute="trailing" id="msf-0g-Fnb"/>
+                <constraint firstItem="AgC-NF-2te" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="s3E-jS-J59"/>
+            </constraints>
+            <size key="customSize" width="166" height="133"/>
+            <connections>
+                <outlet property="isSecImgView" destination="mjV-Xf-Uac" id="qWo-t8-coa"/>
+                <outlet property="mainImgView" destination="Hbf-hj-r3t" id="OTt-mo-8iH"/>
+                <outlet property="nameLabel" destination="S73-05-BHB" id="uoI-hI-wSw"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="42"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bitmap.png" width="50" height="50"/>
+        <image name="huahou-baise.png" width="122" height="123"/>
+    </resources>
+</document>

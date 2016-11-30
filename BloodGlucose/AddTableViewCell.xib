@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addtCell" id="KGk-i7-Jjw" customClass="AddTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apZ-hD-vq9">
+                        <rect key="frame" x="21" y="0.0" width="1" height="60"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="koj-9h-jvA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="福德路" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-SI-05j">
+                        <rect key="frame" x="43" y="3" width="58" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="5HP-Xw-6S1"/>
+                            <constraint firstAttribute="height" constant="21" id="gCI-x6-jiW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18601999966" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B91-YC-oP4">
+                        <rect key="frame" x="115" y="3" width="112" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="rTk-Gp-0DE"/>
+                            <constraint firstAttribute="width" constant="112" id="zAc-zm-C52"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市海淀区知春路街道65号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPo-Gf-wdT">
+                        <rect key="frame" x="43" y="40" width="254" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Zya-rx-vSo"/>
+                            <constraint firstAttribute="width" constant="254" id="pOr-AB-7h5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dizhi.png" translatesAutoresizingMaskIntoConstraints="NO" id="oJO-SN-IAO">
+                        <rect key="frame" x="14" y="19" width="15" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="7os-RC-OSL"/>
+                            <constraint firstAttribute="height" constant="22" id="bhT-mn-Jar"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="apZ-hD-vq9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Jf-82-It6"/>
+                    <constraint firstItem="mIF-SI-05j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="FaS-SS-7wp"/>
+                    <constraint firstAttribute="bottom" secondItem="apZ-hD-vq9" secondAttribute="bottom" id="Nj2-Zv-yX4"/>
+                    <constraint firstItem="B91-YC-oP4" firstAttribute="leading" secondItem="mIF-SI-05j" secondAttribute="trailing" constant="14" id="Vu9-4S-NU8"/>
+                    <constraint firstItem="sPo-Gf-wdT" firstAttribute="leading" secondItem="apZ-hD-vq9" secondAttribute="trailing" constant="21" id="eUm-bQ-q29"/>
+                    <constraint firstItem="apZ-hD-vq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="oBX-48-ABM"/>
+                    <constraint firstItem="mIF-SI-05j" firstAttribute="leading" secondItem="apZ-hD-vq9" secondAttribute="trailing" constant="21" id="qG9-t5-jdv"/>
+                    <constraint firstItem="oJO-SN-IAO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qQ9-kK-e7o"/>
+                    <constraint firstAttribute="bottom" secondItem="sPo-Gf-wdT" secondAttribute="bottom" constant="5" id="tQQ-AK-XT9"/>
+                    <constraint firstItem="B91-YC-oP4" firstAttribute="centerY" secondItem="mIF-SI-05j" secondAttribute="centerY" id="tnP-Nt-1EX"/>
+                    <constraint firstItem="oJO-SN-IAO" firstAttribute="centerX" secondItem="apZ-hD-vq9" secondAttribute="centerX" id="u6c-SZ-CbC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addLabel" destination="sPo-Gf-wdT" id="aXt-LL-h53"/>
+                <outlet property="nameLabel" destination="mIF-SI-05j" id="LdT-ts-zNt"/>
+                <outlet property="phoneNumLabel" destination="B91-YC-oP4" id="55m-r1-U63"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="327.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dizhi.png" width="59" height="82"/>
+    </resources>
+</document>

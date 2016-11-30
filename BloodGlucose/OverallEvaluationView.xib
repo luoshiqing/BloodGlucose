@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OverallEvaluationView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4V-Lr-kof">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总体评价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyJ-3W-9Dw">
+                            <rect key="frame" x="12" y="0.0" width="120" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FOE-ze-ntw"/>
+                        <constraint firstAttribute="bottom" secondItem="GyJ-3W-9Dw" secondAttribute="bottom" id="RkY-13-hgy"/>
+                        <constraint firstItem="GyJ-3W-9Dw" firstAttribute="top" secondItem="a4V-Lr-kof" secondAttribute="top" id="h0k-HC-tIH"/>
+                        <constraint firstAttribute="trailing" secondItem="GyJ-3W-9Dw" secondAttribute="trailing" constant="188" id="hUC-BU-MKO"/>
+                        <constraint firstItem="GyJ-3W-9Dw" firstAttribute="leading" secondItem="a4V-Lr-kof" secondAttribute="leading" constant="12" id="pOb-zU-upn"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS5-1f-Lsz">
+                    <rect key="frame" x="8" y="43" width="304" height="62"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <attributedString key="attributedText">
+                        <fragment content="努力加载中">
+                            <attributes>
+                                <color key="NSColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" firstLineHeadIndent="25" lineHeightMultiple="0.59999999999999998" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="a4V-Lr-kof" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="42q-tY-w87"/>
+                <constraint firstAttribute="trailing" secondItem="a4V-Lr-kof" secondAttribute="trailing" id="8lS-yK-RKj"/>
+                <constraint firstAttribute="bottom" secondItem="JS5-1f-Lsz" secondAttribute="bottom" constant="9" id="VZn-Lg-Cem"/>
+                <constraint firstItem="JS5-1f-Lsz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Zfg-GQ-9Rm"/>
+                <constraint firstItem="JS5-1f-Lsz" firstAttribute="top" secondItem="a4V-Lr-kof" secondAttribute="bottom" constant="13" id="aiF-ue-ISE"/>
+                <constraint firstItem="a4V-Lr-kof" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mSr-Q3-jQg"/>
+                <constraint firstAttribute="trailing" secondItem="JS5-1f-Lsz" secondAttribute="trailing" constant="8" id="xdu-ov-qbW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="evaluationTextView" destination="JS5-1f-Lsz" id="EG9-zT-64b"/>
+            </connections>
+            <point key="canvasLocation" x="43" y="305"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HealthDCell" id="KGk-i7-Jjw" customClass="HealthDTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI(经计算所得,无需输入)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYx-Cf-y0A">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Cte-Yf-RK7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnp-LE-G4X">
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fey-1M-tuN"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gym-R5-tjM">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Sfz-wW-DAr"/>
+                            <constraint firstAttribute="width" constant="99" id="nzS-Au-HP7"/>
+                        </constraints>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CYx-Cf-y0A" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="16u-Ol-Ihl"/>
+                    <constraint firstItem="tnp-LE-G4X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="FZN-6P-nnf"/>
+                    <constraint firstAttribute="bottom" secondItem="tnp-LE-G4X" secondAttribute="bottom" id="Ipm-wT-Y19"/>
+                    <constraint firstAttribute="trailing" secondItem="tnp-LE-G4X" secondAttribute="trailing" id="J2w-tG-T1u"/>
+                    <constraint firstItem="Gym-R5-tjM" firstAttribute="leading" secondItem="CYx-Cf-y0A" secondAttribute="trailing" constant="1" id="Kzk-qv-86T"/>
+                    <constraint firstAttribute="trailing" secondItem="Gym-R5-tjM" secondAttribute="trailing" constant="15" id="aYr-8H-Bfl"/>
+                    <constraint firstItem="CYx-Cf-y0A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ab4-Yk-es6"/>
+                    <constraint firstItem="Gym-R5-tjM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eje-Zl-amE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="sepH" destination="fey-1M-tuN" id="Jbu-qK-AjT"/>
+                <outlet property="sepView" destination="tnp-LE-G4X" id="ety-os-e8r"/>
+                <outlet property="titLabel" destination="CYx-Cf-y0A" id="Zc5-js-2A5"/>
+                <outlet property="valueTextF" destination="Gym-R5-tjM" id="jrw-cg-Nw0"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="18"/>
+        </tableViewCell>
+    </objects>
+</document>

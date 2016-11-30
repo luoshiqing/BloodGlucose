@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="0.0" reuseIdentifier="SBHFCell" rowHeight="66" id="KGk-i7-Jjw" customClass="SBHistoryFingerTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32.5mmol/L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-MO-NfU">
+                        <rect key="frame" x="20" y="22" width="102" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="SKz-qw-ETh"/>
+                            <constraint firstAttribute="width" constant="102" id="WA1-FK-yFw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2099-99-99 99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e63-s5-Wxw">
+                        <rect key="frame" x="130" y="22" width="171" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="171" id="Hcz-qm-bh5"/>
+                            <constraint firstAttribute="height" constant="21" id="Wli-nD-Ik7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ifv-MO-NfU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Ca4-nW-MZv"/>
+                    <constraint firstItem="Ifv-MO-NfU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DSb-3j-2cc"/>
+                    <constraint firstItem="e63-s5-Wxw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kOA-XU-UHK"/>
+                    <constraint firstAttribute="trailing" secondItem="e63-s5-Wxw" secondAttribute="trailing" constant="19" id="rci-fs-2o6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="dateLabel" destination="e63-s5-Wxw" id="YAt-ze-pXx"/>
+                <outlet property="fingerBloodLabel" destination="Ifv-MO-NfU" id="mPy-PU-DvF"/>
+            </connections>
+            <point key="canvasLocation" x="451" y="400"/>
+        </tableViewCell>
+    </objects>
+</document>

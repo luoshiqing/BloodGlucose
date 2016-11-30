@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfSection1Cell" id="KGk-i7-Jjw" customClass="InfSection1TableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmf-JQ-ylD">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="jGl-2G-XCr"/>
+                            <constraint firstAttribute="width" constant="66" id="pEr-gi-DcH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuPhto.png" translatesAutoresizingMaskIntoConstraints="NO" id="biN-MG-DSJ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="dpk-x1-mLF"/>
+                            <constraint firstAttribute="width" constant="75" id="h4z-By-zzc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="biN-MG-DSJ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0Wv-1W-Cg9"/>
+                    <constraint firstItem="biN-MG-DSJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4Si-FN-VaS"/>
+                    <constraint firstItem="Fmf-JQ-ylD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hhh-KP-uOi"/>
+                    <constraint firstItem="Fmf-JQ-ylD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="nuF-Fr-BWe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="biN-MG-DSJ" id="V6P-pR-Fdf"/>
+                <outlet property="nameLabel" destination="Fmf-JQ-ylD" id="2pf-Iv-Hdp"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="18"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menuPhto.png" width="75" height="75"/>
+    </resources>
+</document>

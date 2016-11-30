@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GraphView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="278"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-Jw-5UD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态血糖变化值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTF-7o-eDm">
+                            <rect key="frame" x="8" y="4" width="117" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="117" id="45z-8C-KBv"/>
+                                <constraint firstAttribute="height" constant="18" id="eDL-30-rLj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.90196078431372551" green="0.41568627450980394" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-Bd-0OS">
+                            <rect key="frame" x="8" y="31" width="312" height="1"/>
+                            <color key="backgroundColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="xGw-mr-T7V"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reporten.png" translatesAutoresizingMaskIntoConstraints="NO" id="3BG-0m-Wi3">
+                            <rect key="frame" x="292" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="b7k-Ho-M7G"/>
+                                <constraint firstAttribute="width" constant="20" id="r6K-6r-ITg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6N-gI-hGr">
+                            <rect key="frame" x="234" y="0.0" width="78" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="78" id="nWn-g3-pno"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3BG-0m-Wi3" firstAttribute="centerY" secondItem="Y6N-gI-hGr" secondAttribute="centerY" id="1YK-Wy-qAJ"/>
+                        <constraint firstItem="zL5-Bd-0OS" firstAttribute="top" secondItem="Y6N-gI-hGr" secondAttribute="bottom" id="A63-La-FhI"/>
+                        <constraint firstAttribute="trailing" secondItem="Y6N-gI-hGr" secondAttribute="trailing" constant="8" id="JaW-xj-dSq"/>
+                        <constraint firstItem="jTF-7o-eDm" firstAttribute="leading" secondItem="RcE-Jw-5UD" secondAttribute="leading" constant="8" id="PDJ-Ir-gou"/>
+                        <constraint firstItem="Y6N-gI-hGr" firstAttribute="top" secondItem="RcE-Jw-5UD" secondAttribute="top" id="fwg-QN-b5i"/>
+                        <constraint firstAttribute="bottom" secondItem="zL5-Bd-0OS" secondAttribute="bottom" constant="10" id="hEe-1j-UWU"/>
+                        <constraint firstItem="jTF-7o-eDm" firstAttribute="top" secondItem="RcE-Jw-5UD" secondAttribute="top" constant="4" id="jXD-rk-pnc"/>
+                        <constraint firstItem="zL5-Bd-0OS" firstAttribute="leading" secondItem="RcE-Jw-5UD" secondAttribute="leading" constant="8" id="ksi-y1-R7Y"/>
+                        <constraint firstAttribute="trailing" secondItem="3BG-0m-Wi3" secondAttribute="trailing" constant="8" id="nu7-qa-dAu"/>
+                        <constraint firstAttribute="trailing" secondItem="zL5-Bd-0OS" secondAttribute="trailing" id="pA7-5f-Twr"/>
+                        <constraint firstAttribute="height" constant="42" id="xEv-du-CHc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fos-mf-XTc" customClass="LineChartView" customModule="Charts">
+                    <rect key="frame" x="8" y="42" width="304" height="236"/>
+                    <color key="backgroundColor" red="0.9605034722222221" green="0.9605034722222221" blue="0.9605034722222221" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RcE-Jw-5UD" secondAttribute="trailing" id="1yR-gR-1pm"/>
+                <constraint firstItem="RcE-Jw-5UD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2Wv-g9-g9z"/>
+                <constraint firstAttribute="trailing" secondItem="Fos-mf-XTc" secondAttribute="trailing" constant="8" id="7XH-yr-c41"/>
+                <constraint firstAttribute="bottom" secondItem="Fos-mf-XTc" secondAttribute="bottom" id="LUy-Bu-d7L"/>
+                <constraint firstItem="Fos-mf-XTc" firstAttribute="top" secondItem="RcE-Jw-5UD" secondAttribute="bottom" id="q9e-sN-CXi"/>
+                <constraint firstItem="Fos-mf-XTc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="tbZ-up-Dfm"/>
+                <constraint firstItem="RcE-Jw-5UD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uTY-Ab-Kpd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreImgView" destination="3BG-0m-Wi3" id="iNe-dS-4Du"/>
+                <outlet property="moreLabel" destination="Y6N-gI-hGr" id="t33-X4-yKs"/>
+                <outlet property="moreView" destination="RcE-Jw-5UD" id="13M-5F-NX1"/>
+                <outlet property="myLineView" destination="Fos-mf-XTc" id="dai-2P-8qj"/>
+            </connections>
+            <point key="canvasLocation" x="411" y="232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reporten.png" width="56" height="57"/>
+    </resources>
+</document>

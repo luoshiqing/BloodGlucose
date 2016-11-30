@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CurrentChartView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="378"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tix-vr-7VU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="19X-PT-Hv6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvw-fF-SAP">
+                    <rect key="frame" x="0.0" y="337" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldp-zG-cKy">
+                            <rect key="frame" x="8" y="5" width="70" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="76e-jO-I5S"/>
+                                <constraint firstAttribute="height" constant="30" id="Exw-Gg-VvB"/>
+                            </constraints>
+                            <state key="normal" title="上一天">
+                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is2-Iv-LrN">
+                            <rect key="frame" x="152" y="5" width="70" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="SAh-Pj-EHr"/>
+                                <constraint firstAttribute="width" constant="70" id="dv8-mE-rO6"/>
+                            </constraints>
+                            <state key="normal" title="大图">
+                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-5k-WOf">
+                            <rect key="frame" x="297" y="5" width="70" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="W3I-Yh-gIe"/>
+                                <constraint firstAttribute="height" constant="30" id="WLm-89-Znc"/>
+                            </constraints>
+                            <state key="normal" title="下一天">
+                                <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5Ms-Op-eM5"/>
+                        <constraint firstAttribute="trailing" secondItem="SsU-5k-WOf" secondAttribute="trailing" constant="8" id="Hvc-rX-KSH"/>
+                        <constraint firstItem="Is2-Iv-LrN" firstAttribute="centerX" secondItem="kvw-fF-SAP" secondAttribute="centerX" id="JVO-Eu-fgr"/>
+                        <constraint firstItem="ldp-zG-cKy" firstAttribute="leading" secondItem="kvw-fF-SAP" secondAttribute="leading" constant="8" id="PQX-uG-GjD"/>
+                        <constraint firstItem="Is2-Iv-LrN" firstAttribute="centerY" secondItem="kvw-fF-SAP" secondAttribute="centerY" id="R9k-mj-dZv"/>
+                        <constraint firstItem="SsU-5k-WOf" firstAttribute="centerY" secondItem="kvw-fF-SAP" secondAttribute="centerY" id="aqt-U4-rLo"/>
+                        <constraint firstItem="ldp-zG-cKy" firstAttribute="centerY" secondItem="kvw-fF-SAP" secondAttribute="centerY" id="oAv-Mg-4vA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGt-aK-6KY" customClass="LineChartView" customModule="Charts">
+                    <rect key="frame" x="0.0" y="35" width="375" height="301"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gGt-aK-6KY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Xn-08-Mh3"/>
+                <constraint firstItem="kvw-fF-SAP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="54o-Gg-XgP"/>
+                <constraint firstAttribute="bottom" secondItem="kvw-fF-SAP" secondAttribute="bottom" constant="1" id="5ka-zI-Q3a"/>
+                <constraint firstItem="tix-vr-7VU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="A9w-Sv-E2b"/>
+                <constraint firstAttribute="trailing" secondItem="gGt-aK-6KY" secondAttribute="trailing" id="Cce-ce-U6N"/>
+                <constraint firstItem="gGt-aK-6KY" firstAttribute="top" secondItem="tix-vr-7VU" secondAttribute="bottom" id="GAJ-Dx-ybu"/>
+                <constraint firstAttribute="trailing" secondItem="tix-vr-7VU" secondAttribute="trailing" id="Mqa-lg-20U"/>
+                <constraint firstItem="tix-vr-7VU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UmR-Ge-eXL"/>
+                <constraint firstItem="kvw-fF-SAP" firstAttribute="top" secondItem="gGt-aK-6KY" secondAttribute="bottom" constant="1" id="WHQ-Hg-TTv"/>
+                <constraint firstAttribute="trailing" secondItem="kvw-fF-SAP" secondAttribute="trailing" id="Y8y-wb-b5g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayLabel" destination="tix-vr-7VU" id="jt5-q1-tKt"/>
+                <outlet property="largerChartBtn" destination="Is2-Iv-LrN" id="gK8-9R-KIJ"/>
+                <outlet property="lastDayBtn" destination="ldp-zG-cKy" id="tKo-oS-80K"/>
+                <outlet property="lineView" destination="gGt-aK-6KY" id="YS6-ou-Idg"/>
+                <outlet property="nextBtn" destination="SsU-5k-WOf" id="zdW-gv-SB0"/>
+            </connections>
+            <point key="canvasLocation" x="334.5" y="151"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeftHeadView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJsport.png" translatesAutoresizingMaskIntoConstraints="NO" id="RVy-c9-h5q">
+                    <rect key="frame" x="11" y="46" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Idh-Hc-To3"/>
+                        <constraint firstAttribute="width" constant="50" id="i25-tv-c1B"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优医糖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-Ra-NAx">
+                    <rect key="frame" x="74" y="46" width="151" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="gb2-a3-HBN"/>
+                        <constraint firstAttribute="width" constant="151" id="rRc-pJ-BhZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mi-cW-lsh">
+                    <rect key="frame" x="74" y="73" width="163" height="8"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vpL-s9-EPD">
+                            <rect key="frame" x="0.0" y="0.0" width="1" height="8"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.56470588235294117" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="83v-Ah-DsL"/>
+                        <constraint firstAttribute="width" constant="163" id="sxm-Be-uek"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资料完善度：50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MM-HD-ger">
+                    <rect key="frame" x="74" y="86" width="151" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="1MX-fC-o0d"/>
+                        <constraint firstAttribute="width" constant="151" id="vmD-BT-Ov2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.69803921570000005" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6MM-HD-ger" firstAttribute="leading" secondItem="RVy-c9-h5q" secondAttribute="trailing" constant="13" id="3sa-dK-20c"/>
+                <constraint firstItem="BgF-Ra-NAx" firstAttribute="leading" secondItem="RVy-c9-h5q" secondAttribute="trailing" constant="13" id="Cpz-zl-Pro"/>
+                <constraint firstItem="RVy-c9-h5q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="15" id="Cy3-sc-c6c"/>
+                <constraint firstItem="BgF-Ra-NAx" firstAttribute="top" secondItem="RVy-c9-h5q" secondAttribute="top" id="Qoa-m5-9tU"/>
+                <constraint firstItem="8Mi-cW-lsh" firstAttribute="leading" secondItem="RVy-c9-h5q" secondAttribute="trailing" constant="13" id="S3o-py-A55"/>
+                <constraint firstItem="RVy-c9-h5q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="aSX-S0-XtU"/>
+                <constraint firstItem="6MM-HD-ger" firstAttribute="top" secondItem="8Mi-cW-lsh" secondAttribute="bottom" constant="5" id="baK-Je-ZDH"/>
+                <constraint firstItem="8Mi-cW-lsh" firstAttribute="top" secondItem="BgF-Ra-NAx" secondAttribute="bottom" constant="10" id="sd7-Wk-B9i"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="BGW" destination="sxm-Be-uek" id="yeL-xS-Qy8"/>
+                <outlet property="completeLabel" destination="6MM-HD-ger" id="ZIk-YI-gEX"/>
+                <outlet property="donwView" destination="8Mi-cW-lsh" id="fDb-fi-urZ"/>
+                <outlet property="imgView" destination="RVy-c9-h5q" id="3b2-0Y-Knv"/>
+                <outlet property="nameLabel" destination="BgF-Ra-NAx" id="sVL-ff-EiT"/>
+                <outlet property="topView" destination="vpL-s9-EPD" id="ePR-Nc-Zxy"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="-9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MJsport.png" width="37" height="37"/>
+    </resources>
+</document>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UtypeFoodView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="294"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的体重属于的类型是:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXD-oC-IS7">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DNg-BO-UBA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="肥胖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7U-g3-XFF">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="RYf-wH-yZk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根据您的活动强度您所需的热量是:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqn-Kx-Z43">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="P9k-DJ-N04"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000千卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBl-Kh-gzt">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="la2-fc-Qh3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="食物交换份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZU-qq-uiT">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VaJ-yy-VjH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19I-ML-Q8D">
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GIk-73-z5h"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*一份不同类食物交换所提供的热量是相同的(90千卡)" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03q-Tc-jJh">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="QOo-9B-rbi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*同类食物在一定重量内所含的蛋白质、脂肪、碳水化合和热量相近" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouj-5x-dXc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="xSy-XI-jQE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*不同食物不能互换，同类食物可以互换" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o74-Cd-xrJ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="RpC-Yk-bmS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mZU-qq-uiT" firstAttribute="top" secondItem="DBl-Kh-gzt" secondAttribute="bottom" constant="25" id="15F-Fe-tVX"/>
+                <constraint firstAttribute="trailing" secondItem="y7U-g3-XFF" secondAttribute="trailing" id="16T-pD-Jro"/>
+                <constraint firstAttribute="trailing" secondItem="Ouj-5x-dXc" secondAttribute="trailing" constant="8" id="16X-bh-PhF"/>
+                <constraint firstAttribute="trailing" secondItem="03q-Tc-jJh" secondAttribute="trailing" constant="8" id="34E-i7-gtI"/>
+                <constraint firstItem="DBl-Kh-gzt" firstAttribute="top" secondItem="tqn-Kx-Z43" secondAttribute="bottom" constant="5" id="38M-7N-Z4r"/>
+                <constraint firstItem="19I-ML-Q8D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="4yP-Ke-jwj"/>
+                <constraint firstItem="mZU-qq-uiT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="5J7-1Q-R8f"/>
+                <constraint firstItem="bXD-oC-IS7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="6fK-PQ-N9f"/>
+                <constraint firstItem="tqn-Kx-Z43" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7VC-a2-iuz"/>
+                <constraint firstItem="y7U-g3-XFF" firstAttribute="top" secondItem="bXD-oC-IS7" secondAttribute="bottom" constant="5" id="Eu0-r6-weC"/>
+                <constraint firstItem="03q-Tc-jJh" firstAttribute="top" secondItem="19I-ML-Q8D" secondAttribute="bottom" constant="8" id="FSU-jU-LqO"/>
+                <constraint firstAttribute="trailing" secondItem="tqn-Kx-Z43" secondAttribute="trailing" id="GPO-zi-nil"/>
+                <constraint firstItem="19I-ML-Q8D" firstAttribute="top" secondItem="mZU-qq-uiT" secondAttribute="bottom" constant="3" id="Iv0-AN-erP"/>
+                <constraint firstItem="tqn-Kx-Z43" firstAttribute="top" secondItem="y7U-g3-XFF" secondAttribute="bottom" constant="5" id="Mwc-h6-Pt3"/>
+                <constraint firstAttribute="trailing" secondItem="o74-Cd-xrJ" secondAttribute="trailing" constant="8" id="Qla-kv-se6"/>
+                <constraint firstAttribute="trailing" secondItem="bXD-oC-IS7" secondAttribute="trailing" id="UF9-8k-0bp"/>
+                <constraint firstItem="o74-Cd-xrJ" firstAttribute="top" secondItem="Ouj-5x-dXc" secondAttribute="bottom" constant="8" id="VsV-GY-IUX"/>
+                <constraint firstItem="Ouj-5x-dXc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="Yh8-9h-WWl"/>
+                <constraint firstItem="o74-Cd-xrJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="bG1-ku-cRw"/>
+                <constraint firstAttribute="trailing" secondItem="19I-ML-Q8D" secondAttribute="trailing" constant="8" id="dDB-Rc-GJv"/>
+                <constraint firstItem="Ouj-5x-dXc" firstAttribute="top" secondItem="03q-Tc-jJh" secondAttribute="bottom" constant="8" id="oZx-wt-nZN"/>
+                <constraint firstItem="bXD-oC-IS7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pwj-e4-glU"/>
+                <constraint firstItem="DBl-Kh-gzt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qmd-U8-Afj"/>
+                <constraint firstItem="03q-Tc-jJh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="vgY-8N-WgT"/>
+                <constraint firstAttribute="trailing" secondItem="DBl-Kh-gzt" secondAttribute="trailing" id="vn2-iv-vY2"/>
+                <constraint firstItem="y7U-g3-XFF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wJg-zQ-SIh"/>
+                <constraint firstAttribute="trailing" secondItem="mZU-qq-uiT" secondAttribute="trailing" constant="203" id="xiI-gG-LyR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="energyLabel" destination="DBl-Kh-gzt" id="JWi-Hn-GWy"/>
+                <outlet property="oneLabel" destination="03q-Tc-jJh" id="W0N-Mk-0nV"/>
+                <outlet property="threeLabel" destination="o74-Cd-xrJ" id="gWo-mN-MUh"/>
+                <outlet property="towLabel" destination="Ouj-5x-dXc" id="1tw-i9-2eX"/>
+                <outlet property="typeLabel" destination="y7U-g3-XFF" id="5eX-wG-rfC"/>
+            </connections>
+            <point key="canvasLocation" x="495.5" y="170"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="67" id="KGk-i7-Jjw" customClass="FingerBloodTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECL-dI-SYC">
+                        <rect key="frame" x="24" y="23" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="s4S-yN-LME"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.88627450980392153" green="0.36470588235294116" blue="0.17647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bd5-H8-xT8">
+                        <rect key="frame" x="241" y="23" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="Wgm-TJ-MJY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.38133285984848486" green="0.38133285984848486" blue="0.38133285984848486" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="Bd5-H8-xT8" secondAttribute="centerY" constant="-0.25" id="RuN-cS-DB8"/>
+                    <constraint firstAttribute="centerY" secondItem="ECL-dI-SYC" secondAttribute="centerY" constant="-0.25" id="Ult-0k-b1v"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Bd5-H8-xT8" secondAttribute="trailing" constant="10" id="lnq-dL-vxS"/>
+                    <constraint firstItem="ECL-dI-SYC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="u9b-dp-SpP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="Bd5-H8-xT8" id="arN-8D-D4M"/>
+                <outlet property="fingerBloodLabel" destination="ECL-dI-SYC" id="iDk-TK-a3g"/>
+            </connections>
+            <point key="canvasLocation" x="508.5" y="400.5"/>
+        </tableViewCell>
+    </objects>
+</document>

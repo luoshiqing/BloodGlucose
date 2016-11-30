@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MationOneCell" id="KGk-i7-Jjw" customClass="MationOneTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真实姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cej-Fi-AUp">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="XOw-Ys-kya"/>
+                            <constraint firstAttribute="height" constant="21" id="j70-IH-axt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入姓名" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iT8-rv-aaD">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ydp-HM-Wgs"/>
+                        </constraints>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="Ugq-Ld-eQl"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJr-fr-Qee">
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BcU-kc-O4b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yJr-fr-Qee" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="HD2-oR-iEN"/>
+                    <constraint firstAttribute="trailing" secondItem="yJr-fr-Qee" secondAttribute="trailing" id="JhU-mS-QRG"/>
+                    <constraint firstItem="iT8-rv-aaD" firstAttribute="leading" secondItem="Cej-Fi-AUp" secondAttribute="trailing" constant="1" id="KqC-Ub-IMr"/>
+                    <constraint firstItem="Cej-Fi-AUp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ajf-ya-Xnh"/>
+                    <constraint firstItem="Cej-Fi-AUp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gCZ-DV-PzW"/>
+                    <constraint firstAttribute="bottom" secondItem="yJr-fr-Qee" secondAttribute="bottom" id="hMi-GJ-c9b"/>
+                    <constraint firstAttribute="trailing" secondItem="iT8-rv-aaD" secondAttribute="trailing" constant="19" id="hdl-Pi-kdC"/>
+                    <constraint firstItem="iT8-rv-aaD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="whk-fk-jKd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inforTF" destination="iT8-rv-aaD" id="B4k-aX-CPE"/>
+                <outlet property="nameLabel" destination="Cej-Fi-AUp" id="4W6-JM-Rra"/>
+                <outlet property="sepH" destination="BcU-kc-O4b" id="DSI-P7-XJl"/>
+                <outlet property="sepView" destination="yJr-fr-Qee" id="upA-99-ZNz"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="-52.5"/>
+        </tableViewCell>
+    </objects>
+</document>

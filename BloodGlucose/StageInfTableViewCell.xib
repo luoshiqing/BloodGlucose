@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StageInfCell" id="KGk-i7-Jjw" customClass="StageInfTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日常活动强度:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccv-oj-WCF">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="86O-eI-qjW"/>
+                            <constraint firstAttribute="height" constant="21" id="ED0-Q5-v90"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="sdb-4N-Eu1">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="sSk-UZ-9be"/>
+                            <constraint firstAttribute="height" constant="12" id="sfy-xb-EnW"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KHi-t1-Va2">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="efS-gk-eVa"/>
+                        </constraints>
+                        <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sdb-4N-Eu1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0G4-CB-M01"/>
+                    <constraint firstAttribute="trailing" secondItem="sdb-4N-Eu1" secondAttribute="trailing" constant="15" id="9Q7-ge-dIn"/>
+                    <constraint firstItem="ccv-oj-WCF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SiO-IH-RSX"/>
+                    <constraint firstItem="KHi-t1-Va2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="acc-Rb-1rC"/>
+                    <constraint firstItem="ccv-oj-WCF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="noi-2k-PWj"/>
+                    <constraint firstItem="KHi-t1-Va2" firstAttribute="leading" secondItem="ccv-oj-WCF" secondAttribute="trailing" id="rfJ-uB-Shl"/>
+                    <constraint firstItem="sdb-4N-Eu1" firstAttribute="leading" secondItem="KHi-t1-Va2" secondAttribute="trailing" constant="8" id="w11-bd-VgS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="nameLabel" destination="ccv-oj-WCF" id="mKK-eB-f8P"/>
+                <outlet property="valueLabel" destination="KHi-t1-Va2" id="Vjp-1g-GZP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sBack.png" width="4" height="9"/>
+    </resources>
+</document>

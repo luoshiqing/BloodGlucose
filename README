@@ -1,0 +1,38 @@
+1. 安装 Xcode，保证版本6.4以上。
+
+2. 命令行安装 iOS 开发包管理工具 Pod：
+	sudo gem install cocoapods
+
+
+	注：这里可能需要修改 gem 仓库源，国外源经常无法访问，修改方式：
+
+	gem sources --remove https://rubygems.org/
+	gem sources -a https://ruby.taobao.org/
+
+3. 切换到项目主目录下（podfile所在目录），使用 pod 安装相关依赖库：
+
+	pod install  --no-repo-update --verbose
+
+4. 安装完成后会生成一个新的 BloodGlucose.xcworkspace 文件，打开
+
+5. 项目配置中修改 General -> Identity -> Team 为实际使用开发者账号。
+
+6. 编译
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

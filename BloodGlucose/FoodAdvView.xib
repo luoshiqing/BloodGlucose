@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FoodAdvView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="335"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="做法推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P99-cS-gPj">
+                    <rect key="frame" x="8" y="31" width="135" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cSv-Yf-UvC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清蒸、凉拌、炖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CU-IS-yrf">
+                    <rect key="frame" x="8" y="58" width="304" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="ToP-aO-fke"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不推荐做法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDR-Kv-wRK">
+                    <rect key="frame" x="8" y="95" width="135" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DTX-Yg-rVn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="煎、炸、过油红烧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yx-rD-0PL">
+                    <rect key="frame" x="8" y="124" width="304" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="w16-PB-eYG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最不推荐做法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLy-Cx-Dl8">
+                    <rect key="frame" x="8" y="162" width="135" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="o3f-fh-aGo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任何磨成糊状的粥、带有红枣的粘稠的粥、疙瘩汤" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-aC-qQT">
+                    <rect key="frame" x="8" y="191" width="304" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="89a-aS-ULA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康饮食建议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-zt-Tfb">
+                    <rect key="frame" x="8" y="228" width="135" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="e1h-K0-A2A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-eC-RJJ">
+                    <rect key="frame" x="8" y="257" width="304" height="62"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="CtZ-pr-rWv"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="一般来说，食物加工越精细，煮的越烂，颗粒越小，血糖升糖指数越高，粗粮、糙米、混合餐、醋等均可降低升糖指数。">
+                            <attributes>
+                                <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="NSColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="11" lineHeightMultiple="0.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UDR-Kv-wRK" secondAttribute="trailing" constant="177" id="1CD-vf-7jB"/>
+                <constraint firstItem="QgB-zt-Tfb" firstAttribute="top" secondItem="Z02-aC-qQT" secondAttribute="bottom" constant="19" id="48J-IB-YXC"/>
+                <constraint firstItem="UDR-Kv-wRK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="4Ss-49-1AX"/>
+                <constraint firstItem="pX1-eC-RJJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="9SX-jp-gY6"/>
+                <constraint firstItem="2Yx-rD-0PL" firstAttribute="top" secondItem="UDR-Kv-wRK" secondAttribute="bottom" constant="8" id="ACD-Tv-njd"/>
+                <constraint firstItem="Z02-aC-qQT" firstAttribute="top" secondItem="dLy-Cx-Dl8" secondAttribute="bottom" constant="8" id="AmE-Gr-uSf"/>
+                <constraint firstAttribute="trailing" secondItem="P99-cS-gPj" secondAttribute="trailing" constant="177" id="B2R-xb-fpt"/>
+                <constraint firstItem="UDR-Kv-wRK" firstAttribute="top" secondItem="9CU-IS-yrf" secondAttribute="bottom" constant="19" id="BQI-SH-xrD"/>
+                <constraint firstAttribute="trailing" secondItem="2Yx-rD-0PL" secondAttribute="trailing" constant="8" id="BT7-BM-CJV"/>
+                <constraint firstItem="Z02-aC-qQT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="BlV-Sm-wt9"/>
+                <constraint firstAttribute="trailing" secondItem="Z02-aC-qQT" secondAttribute="trailing" constant="8" id="F7R-He-OF7"/>
+                <constraint firstItem="dLy-Cx-Dl8" firstAttribute="top" secondItem="2Yx-rD-0PL" secondAttribute="bottom" constant="20" id="Jgb-sS-PRX"/>
+                <constraint firstItem="9CU-IS-yrf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="QCh-MK-0qD"/>
+                <constraint firstItem="P99-cS-gPj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TbK-8c-nFx"/>
+                <constraint firstAttribute="trailing" secondItem="dLy-Cx-Dl8" secondAttribute="trailing" constant="177" id="YBR-5F-hsY"/>
+                <constraint firstAttribute="trailing" secondItem="QgB-zt-Tfb" secondAttribute="trailing" constant="177" id="cQ7-u9-8RR"/>
+                <constraint firstAttribute="bottom" secondItem="pX1-eC-RJJ" secondAttribute="bottom" constant="16" id="dwZ-RN-0Uq"/>
+                <constraint firstItem="9CU-IS-yrf" firstAttribute="top" secondItem="P99-cS-gPj" secondAttribute="bottom" constant="6" id="g5H-88-BsH"/>
+                <constraint firstItem="dLy-Cx-Dl8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="jsn-ex-nQp"/>
+                <constraint firstAttribute="trailing" secondItem="9CU-IS-yrf" secondAttribute="trailing" constant="8" id="lmt-px-ySi"/>
+                <constraint firstAttribute="trailing" secondItem="pX1-eC-RJJ" secondAttribute="trailing" constant="8" id="tZl-So-7Q8"/>
+                <constraint firstItem="QgB-zt-Tfb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="tcX-qs-QvI"/>
+                <constraint firstItem="P99-cS-gPj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="uYC-zP-gZc"/>
+                <constraint firstItem="2Yx-rD-0PL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="xz3-w6-EkI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adviceLabel" destination="pX1-eC-RJJ" id="UPq-9q-UHG"/>
+            </connections>
+            <point key="canvasLocation" x="434" y="284.5"/>
+        </view>
+    </objects>
+</document>

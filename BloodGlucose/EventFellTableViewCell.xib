@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventFellCell" id="KGk-i7-Jjw" customClass="EventFellTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事件心情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRw-BM-guR">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="IxN-O5-oWx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBc-pM-YMe">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eventSD.png" translatesAutoresizingMaskIntoConstraints="NO" id="pDh-k1-wi7">
+                                <frame key="frameInset" minX="20" minY="12" width="14" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="高兴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDM-lv-QK3">
+                                <frame key="frameInset" minX="6" minY="31" width="42" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="0L4-oN-nzb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87g-6x-EEb">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eventNSD.png" translatesAutoresizingMaskIntoConstraints="NO" id="wPX-9u-Xpb">
+                                <frame key="frameInset" minX="20" minY="12" width="14" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正常" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCi-Tb-noR">
+                                <frame key="frameInset" minX="6" minY="31" width="42" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="D8a-j1-9aX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvF-5I-quS">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eventNSD.png" translatesAutoresizingMaskIntoConstraints="NO" id="RFM-id-Gyq">
+                                <frame key="frameInset" minX="20" minY="12" width="14" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="不舒服" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-Th-FuS">
+                                <frame key="frameInset" minX="6" minY="31" width="42" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="zoB-ar-XNw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uvF-5I-quS" secondAttribute="trailing" constant="18" id="96h-ho-C4B"/>
+                    <constraint firstItem="rBc-pM-YMe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GRT-qx-tbt"/>
+                    <constraint firstAttribute="bottom" secondItem="uvF-5I-quS" secondAttribute="bottom" id="PIs-h7-BAO"/>
+                    <constraint firstItem="iRw-BM-guR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Vdz-FR-Hv5"/>
+                    <constraint firstItem="87g-6x-EEb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WdI-ka-Xqn"/>
+                    <constraint firstAttribute="bottom" secondItem="87g-6x-EEb" secondAttribute="bottom" id="aiX-2d-Gud"/>
+                    <constraint firstItem="uvF-5I-quS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bj4-eW-DYQ"/>
+                    <constraint firstItem="iRw-BM-guR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ch2-xK-SNH"/>
+                    <constraint firstAttribute="bottom" secondItem="rBc-pM-YMe" secondAttribute="bottom" id="dK7-lz-J1i"/>
+                    <constraint firstItem="87g-6x-EEb" firstAttribute="leading" secondItem="rBc-pM-YMe" secondAttribute="trailing" id="fsO-cx-csI"/>
+                    <constraint firstItem="uvF-5I-quS" firstAttribute="leading" secondItem="87g-6x-EEb" secondAttribute="trailing" id="hd6-aI-iJT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="happImg" destination="pDh-k1-wi7" id="SdO-kb-aRa"/>
+                <outlet property="happLabel" destination="VDM-lv-QK3" id="82Y-Nj-IX3"/>
+                <outlet property="happyView" destination="rBc-pM-YMe" id="1Av-04-8df"/>
+                <outlet property="normalImg" destination="wPX-9u-Xpb" id="fTv-qn-hcK"/>
+                <outlet property="normalLabel" destination="PCi-Tb-noR" id="cFX-hV-s3b"/>
+                <outlet property="normalView" destination="87g-6x-EEb" id="FF5-8W-F2O"/>
+                <outlet property="titLabel" destination="iRw-BM-guR" id="hAa-I1-Ne0"/>
+                <outlet property="uncomfortableImg" destination="RFM-id-Gyq" id="SQx-aW-qpG"/>
+                <outlet property="uncomfortableLabel" destination="t2P-Th-FuS" id="J9z-YW-LzB"/>
+                <outlet property="uncomfortableView" destination="uvF-5I-quS" id="J9x-la-gjB"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="-79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eventNSD.png" width="15" height="15"/>
+        <image name="eventSD.png" width="15" height="15"/>
+    </resources>
+</document>

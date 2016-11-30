@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SBLeftCell" rowHeight="51" id="KGk-i7-Jjw" customClass="SBLeftTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exchange.png" translatesAutoresizingMaskIntoConstraints="NO" id="aT4-g4-PrR">
+                        <rect key="frame" x="8" y="19" width="17" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="9tk-BL-VrO"/>
+                            <constraint firstAttribute="width" constant="17" id="sqE-fU-4TB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更换设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-h8-pU2">
+                        <rect key="frame" x="28" y="12" width="284" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="mAX-lZ-Ugq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="sZs-h8-pU2" firstAttribute="leading" secondItem="aT4-g4-PrR" secondAttribute="trailing" constant="3" id="JSr-bf-bMG"/>
+                    <constraint firstItem="aT4-g4-PrR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="K1j-FN-zfa"/>
+                    <constraint firstAttribute="trailing" secondItem="sZs-h8-pU2" secondAttribute="trailing" constant="8" id="dAO-nd-yex"/>
+                    <constraint firstItem="sZs-h8-pU2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wD2-x6-rSq"/>
+                    <constraint firstItem="aT4-g4-PrR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yEt-pg-GYV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+            <connections>
+                <outlet property="imgHeight" destination="9tk-BL-VrO" id="m5k-Cn-ioJ"/>
+                <outlet property="imgView" destination="aT4-g4-PrR" id="jFF-1J-961"/>
+                <outlet property="imgWidth" destination="sqE-fU-4TB" id="ev5-09-dXd"/>
+                <outlet property="nameLabel" destination="sZs-h8-pU2" id="PSf-D3-ati"/>
+            </connections>
+            <point key="canvasLocation" x="387" y="458.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="exchange.png" width="17" height="12"/>
+    </resources>
+</document>

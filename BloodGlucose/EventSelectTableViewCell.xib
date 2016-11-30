@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventSelectCell" id="KGk-i7-Jjw" customClass="EventSelectTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eventFood.png" translatesAutoresizingMaskIntoConstraints="NO" id="VKw-i9-0xd">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="4kY-IX-62n"/>
+                            <constraint firstAttribute="height" constant="27" id="8Ae-KU-VsI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="饮食" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1P-al-wyY">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="02n-su-Zhm"/>
+                            <constraint firstAttribute="width" constant="148" id="L7n-oP-iKd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="AQM-Fg-WY3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="hNX-zq-sXC"/>
+                            <constraint firstAttribute="width" constant="6" id="t7x-Tn-ceu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AQM-Fg-WY3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5j2-Nf-yl6"/>
+                    <constraint firstItem="VKw-i9-0xd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SWe-Cj-EZX"/>
+                    <constraint firstAttribute="trailing" secondItem="AQM-Fg-WY3" secondAttribute="trailing" constant="18" id="aeZ-aH-dJa"/>
+                    <constraint firstItem="VKw-i9-0xd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="b9o-uY-qnb"/>
+                    <constraint firstItem="L1P-al-wyY" firstAttribute="leading" secondItem="VKw-i9-0xd" secondAttribute="trailing" constant="14" id="eKL-bG-rxU"/>
+                    <constraint firstItem="L1P-al-wyY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="p7S-k3-bgZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="VKw-i9-0xd" id="pw2-On-f29"/>
+                <outlet property="nameLabel" destination="L1P-al-wyY" id="GJ7-QP-Voq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eventFood.png" width="27" height="27"/>
+        <image name="hRight.png" width="6" height="11"/>
+    </resources>
+</document>

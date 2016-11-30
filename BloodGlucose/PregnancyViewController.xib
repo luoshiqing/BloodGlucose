@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PregnancyViewController" customModule="BloodGlucose" customModuleProvider="target">
+            <connections>
+                <outlet property="lineH" destination="xEb-2p-fih" id="ClE-Uu-8jE"/>
+                <outlet property="nextBtn" destination="E3H-YX-wPJ" id="cMP-vC-exR"/>
+                <outlet property="preTabView" destination="XqU-3k-ssQ" id="7g7-LX-2Lu"/>
+                <outlet property="skipBtn" destination="tzr-Ui-uvM" id="fwA-h1-2iX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写准确的数据，让我们的团队为您量身定制更科学的控糖方案！" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAZ-mF-4gx">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rJ3-Xo-fN5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XqU-3k-ssQ">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="VIZ-VW-ExF"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Q9T-cK-rRE"/>
+                        <outlet property="delegate" destination="-1" id="UKk-gA-kvt"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgQ-BA-zc2">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3H-YX-wPJ">
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="155" id="x0c-yX-A9r"/>
+                                <constraint firstAttribute="height" constant="33" id="zJi-sh-EWj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="下一步">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzr-Ui-uvM">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="JAw-jo-WOP"/>
+                                <constraint firstAttribute="width" constant="155" id="Kz3-6b-0Qx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="忘记了，跳过">
+                                <color key="titleColor" red="0.96470588239999999" green="0.36470588240000001" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="tzr-Ui-uvM" firstAttribute="centerX" secondItem="GgQ-BA-zc2" secondAttribute="centerX" id="NEc-bM-rzj"/>
+                        <constraint firstItem="tzr-Ui-uvM" firstAttribute="top" secondItem="E3H-YX-wPJ" secondAttribute="bottom" constant="8" id="UCy-Ea-rjl"/>
+                        <constraint firstAttribute="height" constant="102" id="WOf-4t-Jt7"/>
+                        <constraint firstItem="E3H-YX-wPJ" firstAttribute="top" secondItem="GgQ-BA-zc2" secondAttribute="top" constant="14" id="lxM-px-DqW"/>
+                        <constraint firstItem="E3H-YX-wPJ" firstAttribute="centerX" secondItem="GgQ-BA-zc2" secondAttribute="centerX" id="rA9-9t-LPf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bk-78-uCV">
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xEb-2p-fih"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iAZ-mF-4gx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="3Fi-Mc-cJJ"/>
+                <constraint firstAttribute="trailing" secondItem="GgQ-BA-zc2" secondAttribute="trailing" id="BrE-oj-Foj"/>
+                <constraint firstItem="XqU-3k-ssQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HsI-Ca-ObJ"/>
+                <constraint firstItem="XqU-3k-ssQ" firstAttribute="top" secondItem="8bk-78-uCV" secondAttribute="bottom" id="HxE-Tc-w3l"/>
+                <constraint firstAttribute="trailing" secondItem="XqU-3k-ssQ" secondAttribute="trailing" id="PMe-dG-6c9"/>
+                <constraint firstItem="iAZ-mF-4gx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dUm-X5-loL"/>
+                <constraint firstAttribute="trailing" secondItem="8bk-78-uCV" secondAttribute="trailing" constant="15" id="dvE-qh-pzy"/>
+                <constraint firstAttribute="trailing" secondItem="iAZ-mF-4gx" secondAttribute="trailing" constant="8" id="eMj-eK-atJ"/>
+                <constraint firstItem="8bk-78-uCV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="h4G-Ox-5RF"/>
+                <constraint firstItem="GgQ-BA-zc2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rtD-F7-Sj5"/>
+                <constraint firstItem="8bk-78-uCV" firstAttribute="top" secondItem="iAZ-mF-4gx" secondAttribute="bottom" constant="20" id="u0C-WK-1Bj"/>
+                <constraint firstItem="GgQ-BA-zc2" firstAttribute="top" secondItem="XqU-3k-ssQ" secondAttribute="bottom" id="yJB-rQ-fKX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SBRCell" rowHeight="62" id="KGk-i7-Jjw" customClass="SBRTableViewCell" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf3-T1-ZLk">
+                        <rect key="frame" x="18" y="60" width="302" height="1"/>
+                        <color key="backgroundColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="si0-2a-e4Y"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.2mmol/L" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf5-Zs-bJN">
+                        <rect key="frame" x="203" y="20" width="97" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5Y2-U4-Hkl"/>
+                            <constraint firstAttribute="width" constant="97" id="wdA-B0-bhO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="午餐前  15:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbl-aC-oEb">
+                        <rect key="frame" x="18" y="20" width="169" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CfI-tp-iPL"/>
+                            <constraint firstAttribute="width" constant="169" id="IHS-Ec-auN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sbl-aC-oEb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="9h8-gs-Brh"/>
+                    <constraint firstItem="Yf5-Zs-bJN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Df7-LF-z1K"/>
+                    <constraint firstAttribute="trailing" secondItem="Wf3-T1-ZLk" secondAttribute="trailing" id="Dr1-76-oxg"/>
+                    <constraint firstItem="Sbl-aC-oEb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KNq-qf-jk5"/>
+                    <constraint firstItem="Wf3-T1-ZLk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="MEv-RM-9ct"/>
+                    <constraint firstAttribute="bottom" secondItem="Wf3-T1-ZLk" secondAttribute="bottom" id="gdC-Jq-wLD"/>
+                    <constraint firstAttribute="trailing" secondItem="Yf5-Zs-bJN" secondAttribute="trailing" constant="20" id="jrg-tw-IMQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bloodLabel" destination="Yf5-Zs-bJN" id="nfY-mX-a4G"/>
+                <outlet property="sepH" destination="si0-2a-e4Y" id="Vzj-CH-hbE"/>
+                <outlet property="sepView" destination="Wf3-T1-ZLk" id="4L4-SW-K9x"/>
+                <outlet property="titleTimeLabel" destination="Sbl-aC-oEb" id="wUR-uX-b9G"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="290"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FellView" customModule="BloodGlucose" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="填写名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pz-bV-Mae">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Qgb-j0-QIy"/>
+                        <constraint firstAttribute="width" constant="85" id="r64-fP-lda"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-UH-Co2">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eventSD.png" translatesAutoresizingMaskIntoConstraints="NO" id="4h1-yf-FNy">
+                            <frame key="frameInset" minX="20" minY="13" width="14" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="高兴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHt-Ko-ZAE">
+                            <frame key="frameInset" minY="32" width="54" height="13"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <color key="textColor" red="0.96470588235294119" green="0.36470588235294116" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="XLM-uG-Rtb"/>
+                        <constraint firstAttribute="height" constant="54" id="fGy-kG-KVP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHG-fn-2Lz">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eventNSD.png" translatesAutoresizingMaskIntoConstraints="NO" id="t8Q-QR-cR3">
+                            <frame key="frameInset" minX="20" minY="13" width="14" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="不舒服" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-4q-ONd">
+                            <frame key="frameInset" minY="32" width="54" height="13"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Ac6-sI-J1T"/>
+                        <constraint firstAttribute="width" constant="54" id="BzD-M6-f0G"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHd-Nu-8Xl">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eventNSD.png" translatesAutoresizingMaskIntoConstraints="NO" id="F0u-MF-2BG">
+                            <frame key="frameInset" minX="20" minY="13" width="14" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正常" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUw-IE-poq">
+                            <frame key="frameInset" minY="32" width="54" height="13"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                            <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="bI2-Ui-CdF"/>
+                        <constraint firstAttribute="width" constant="54" id="nIh-tb-Cp6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KHd-Nu-8Xl" firstAttribute="leading" secondItem="ceI-UH-Co2" secondAttribute="trailing" constant="1" id="AvR-xU-URP"/>
+                <constraint firstItem="DHG-fn-2Lz" firstAttribute="leading" secondItem="KHd-Nu-8Xl" secondAttribute="trailing" constant="1" id="Efd-bm-zZf"/>
+                <constraint firstItem="0pz-bV-Mae" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LkR-FL-hNf"/>
+                <constraint firstItem="DHG-fn-2Lz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WBO-RX-5Qg"/>
+                <constraint firstItem="ceI-UH-Co2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Wwy-Ju-3l0"/>
+                <constraint firstItem="0pz-bV-Mae" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="aT2-z6-Yem"/>
+                <constraint firstAttribute="trailing" secondItem="DHG-fn-2Lz" secondAttribute="trailing" constant="18" id="cNU-dz-bU8"/>
+                <constraint firstItem="KHd-Nu-8Xl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ksH-7D-5ni"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftImgView" destination="4h1-yf-FNy" id="hM0-IZ-6wH"/>
+                <outlet property="leftLabel" destination="tHt-Ko-ZAE" id="Oqh-By-wNN"/>
+                <outlet property="leftView" destination="ceI-UH-Co2" id="JWg-IE-sXU"/>
+                <outlet property="middleImgView" destination="F0u-MF-2BG" id="Rtl-ch-QrW"/>
+                <outlet property="middleLabel" destination="cUw-IE-poq" id="nCx-Zn-HJq"/>
+                <outlet property="middleView" destination="KHd-Nu-8Xl" id="VH1-UI-BDZ"/>
+                <outlet property="nameLabel" destination="0pz-bV-Mae" id="OjQ-Yp-pEh"/>
+                <outlet property="rightImgView" destination="t8Q-QR-cR3" id="2DQ-kX-XHt"/>
+                <outlet property="rightLabel" destination="YyJ-4q-ONd" id="WGT-2R-UaJ"/>
+                <outlet property="rigthView" destination="DHG-fn-2Lz" id="9ap-ub-BFz"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="317"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eventNSD.png" width="15" height="15"/>
+        <image name="eventSD.png" width="15" height="15"/>
+    </resources>
+</document>
